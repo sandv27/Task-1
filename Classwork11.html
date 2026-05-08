@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .parent{
+            background-color: pink;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 1%;
+        }
+
+        img{
+            width: 100%;
+            height: 500px;
+        }
+
+        .sectiondiv{
+            display: flex;
+            padding: 2%;
+            background-color: aqua;
+            gap: 30%;
+
+        }
+        .card{
+            padding: 2%;
+            border: 2px solid black;
+            width: 50%;
+            height: 20%;
+        }
+        @media (max-width: 700px){
+            .sectiondiv{
+                flex-direction: column;
+            }
+            .card{
+                flex-direction: column;
+            }
+        }
+
+        .Footer{
+            background-color: peru;
+            padding: 2%;
+            display: flex;
+            gap: 5%;
+        }
+        .imgcard:hover{
+            transform: scale(1.1);
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="parent">
+        <div><a href="">Home</a></div>
+        <div><a href="">About Us</a></div>
+        <div><a href="">Contact Us</a></div>
+
+    </div>
+    <img src="./images/fresh-leaf-reflects-vibrant-green-morning-dew-generated-by-ai.jpg" alt="">
+
+    <div class="sectiondiv">
+       
+        <div class="card"><img class="imgcard" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_Zuz3haRHrSz0f3bnMlUTGa14Qc7Z5LLQ3-l04P98hv9CMXQU" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, suscipit quia in magni doloribus eaque quibusdam consectetur inventore consequuntur? Quidem eius enim modi, similique quos fuga hic laboriosam? Molestias, vel?</p></div>
+        <div class="card"><img class="imgcard" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_Zuz3haRHrSz0f3bnMlUTGa14Qc7Z5LLQ3-l04P98hv9CMXQU" alt=""><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, suscipit quia in magni doloribus eaque quibusdam consectetur inventore consequuntur? Quidem eius enim modi, similique quos fuga hic laboriosam? Molestias, vel?</p></div>
+       
+    </div>
+    <div class="Footer">
+        <div><a href="">Home</a></div>
+        <div><a href="">Contact Us</a></div>
+        <div><a href="">About Us</a></div>
+        <i class="fa-brands fa-whatsapp fa-beat-fade" style="color: rgb(142, 230, 99);font-size: 2.0em;"></i>
+    </div>
+   
+</body>
+</html>
